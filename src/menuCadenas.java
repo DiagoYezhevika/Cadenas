@@ -40,7 +40,6 @@ public class menuCadenas extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
 
@@ -68,16 +67,39 @@ public class menuCadenas extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTextArea3);
 
         jButton1.setText("Contar Palabras");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Contar Vocales");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("Comparar");
+        jButton3.setText("Texto Inmerso");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Invertir Texto");
-
-        jButton5.setText("Comparar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Intercambiar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Salir");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -91,47 +113,47 @@ public class menuCadenas extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(6, 6, 6)
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton4)
+                        .addGap(10, 10, 10)
+                        .addComponent(jButton6)
+                        .addGap(12, 12, 12)
+                        .addComponent(jButton7)))
+                .addContainerGap(26, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel3))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel2))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(104, 104, 104)
+                                .addComponent(jLabel1)))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(jScrollPane1))
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addComponent(jButton1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jButton4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton7))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(104, 104, 104)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel4)))
-                        .addGap(0, 20, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane3)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -159,7 +181,6 @@ public class menuCadenas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4)
-                    .addComponent(jButton5)
                     .addComponent(jButton6)
                     .addComponent(jButton7))
                 .addContainerGap(19, Short.MAX_VALUE))
@@ -172,6 +193,53 @@ public class menuCadenas extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        int x = 0;
+        String cadena = jTextArea1.getText();
+        cadena = cadena.trim();
+        x = contarPalabras(cadena);
+        jTextArea2.setText("Cantidad de palabras: " + String.valueOf(x));
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        int x = 0;
+        String cadena = jTextArea1.getText();
+        cadena = cadena.trim();
+        cadena = contarVocales(cadena);
+        jTextArea2.setText(cadena);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        String respuesta = "";
+        String cadena = jTextArea1.getText();
+        String cadena2 = jTextArea2.getText();
+        System.out.println(cadena.length());
+        System.out.println(cadena2.length());
+        respuesta = textoInmerso(cadena,cadena2);
+        jTextArea3.setText(respuesta);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        String cadena = jTextArea1.getText();
+        cadena = invertirCadena(cadena);
+        jTextArea2.setText(cadena);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        String respuesta = "";
+        String cadena = jTextArea1.getText();
+        String cadena2 = jTextArea2.getText();
+        String cadena3 = jTextArea3.getText();
+        
+        respuesta = intercambiarTexto(cadena,cadena2,cadena3);
+        jTextArea1.setText(respuesta);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -213,7 +281,6 @@ public class menuCadenas extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
@@ -227,4 +294,90 @@ public class menuCadenas extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     // End of variables declaration//GEN-END:variables
+
+
+    public static int contarPalabras(String cadena) {
+        cadena += " ";
+        int palabras = 0;
+        for (int i = 0; i < cadena.length(); i++) {
+            if (cadena.charAt(i) == ' ') {
+                palabras++;
+            }
+        }
+        return palabras;
+    }
+    
+    public static String contarVocales(String cadena) {
+        
+        char opc;
+        int vocala = 0,vocale = 0,vocali = 0,vocalo = 0,vocalu = 0;
+        for (int i = 0; i < cadena.length(); i++) {
+            opc = cadena.charAt(i);
+            switch(opc){
+                case 'a': { vocala++; break; }
+                case 'A': { vocala++; break; }
+                case 'e': { vocale++; break; }
+                case 'E': { vocale++; break; }
+                case 'i': { vocali++; break; }
+                case 'I': { vocali++; break; }
+                case 'o': { vocalo++; break; }
+                case 'O': { vocalo++; break; }
+                case 'u': { vocalu++; break; }
+                case 'U': { vocalu++; break; }
+            }
+        }
+        cadena = "Vocal a: " + vocala + "\n" + "Vocal e: " + vocale + "\n" + "Vocal i: " + vocali + "\n" + "Vocal o: " + vocalo + "\n" + "Vocal u: " + vocalu + "\n";
+        return cadena;
+    }
+    
+    public static String invertirCadena(String cadena) {
+        
+        cadena = cadena.trim();
+        String invertida="";
+        
+        for (int i = cadena.length() - 1; i >= 0; i--) {
+            invertida = invertida + cadena.charAt(i);
+        }
+        return invertida;
+    }
+    
+    public static String textoInmerso(String cadena, String cadena2) {
+        
+        String respuesta = "";
+        //cadena = cadena.trim();
+        //cadena2 = cadena.trim();
+        
+        System.out.println(cadena.length());
+        System.out.println(cadena2.length());
+        
+        if(cadena2.length() > cadena.length()){
+            respuesta = "La cadena no se encuentra inmersa en el texto ";
+        }else{
+            if(cadena.indexOf(cadena2) > -1){
+                respuesta = "La cadena se encuentra inmersa en el texto ";
+            }else{
+                respuesta = "La cadena no se encuentra inmersa en el texto ";
+            }
+        }
+        return respuesta;
+    }
+    
+    public static String intercambiarTexto(String cadena, String cadena2, String cadena3) {
+        
+        String respuesta = "";
+        
+        if(cadena2.length() > cadena.length()){
+            respuesta = "El texto no se puede intercambiar";
+        }else{
+            if(cadena.indexOf(cadena2) > -1){
+                respuesta = "La cadena se encuentra inmersa en el texto ";
+            }else{
+                respuesta = "La cadena no se encuentra inmersa en el texto ";
+            }
+        }
+        System.out.println(cadena.indexOf(cadena2));
+        return respuesta;
+    }
+    
+    
 }
