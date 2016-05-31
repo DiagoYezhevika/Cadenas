@@ -365,11 +365,6 @@ public class menuCadenas extends javax.swing.JFrame {
     public static String textoInmerso(String cadena, String cadena2) {
         
         String respuesta = "";
-        //cadena = cadena.trim();
-        //cadena2 = cadena.trim();
-        
-        System.out.println(cadena.length());
-        System.out.println(cadena2.length());
         
         if(cadena2.length() > cadena.length()){
             respuesta = "La cadena no se encuentra inmersa en el texto ";
